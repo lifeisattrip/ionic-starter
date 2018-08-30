@@ -7,7 +7,8 @@ page-home {
 
 
   button{
-    height: 70px;
+    height: 50px;
+    margin-bottom: 5px;
     ion-icon {
       font-size: 50px;
       ion-badge{
@@ -17,26 +18,13 @@ page-home {
         right: 0px;
         border-radius: 50%;
       }
-      span{
-        font-size: 20px;
-        position: absolute;
-        bottom: 0px;
-      }
-      text-align: center;
-      vertical-align: middle;
     }
   }
 
-  ion-row {
-    height: 100%;
-    flex-wrap: wrap;
-  }
-
-  ion-col {
-    flex: 0 0 25%;
-    max-width: 50%;
+  .category-name{
+    color: #007aff;
+    font-size: 15px;
     text-align: center;
-    padding: 10px 5px;
+    vertical-align: middle;
   }
-
 }

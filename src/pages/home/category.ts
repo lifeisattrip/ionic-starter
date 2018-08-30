@@ -3,7 +3,7 @@ export class Category {
   iconName: string;
   color:string;
   title: string;
-  todoCount: number;
+  todoCount: string;
   navUrl: string;
   description: string;
 
@@ -11,7 +11,7 @@ export class Category {
               iconName: string,
               color:string,
               title: string,
-              todoCount: number,
+              todoCount: string,
               navUrl: string,
               description: string) {
     this.id = id;

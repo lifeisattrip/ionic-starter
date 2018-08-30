@@ -10,24 +10,17 @@
 
 
 <ion-content text-center class="icons-basic-page">
-
-  <ion-row>
-    <ion-col *ngFor="let item of categories">
-      <button ion-button clear>
-        <ion-icon name={{item.iconName}} color={{item.color}}>
-          <ion-badge>{{item.todoCount}}</ion-badge>
-          <span>test</span>
-        </ion-icon>
-          <!--test-->
-      </button>
-    </ion-col>
-
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      <ion-icon name="ionic" color="primary"></ion-icon>
-    </ion-col>
-  </ion-row>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 *ngFor="let item of categories">
+        <button ion-button clear>
+          <ion-icon name={{item.iconName}} color={{item.color}}>
+            <ion-badge *ngIf="item.todoCount!='0'">{{item.todoCount}}</ion-badge>
+          </ion-icon>
+        </button>
+        <div class="category-name">{{item.title}}</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
