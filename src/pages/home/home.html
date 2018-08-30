@@ -1,14 +1,33 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+
+    <ion-title>Icons</ion-title>
+
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<ion-content text-center class="icons-basic-page">
+
+  <ion-row>
+    <ion-col *ngFor="let item of categories">
+      <button ion-button clear>
+        <ion-icon name={{item.iconName}} color={{item.color}}>
+          <ion-badge>{{item.todoCount}}</ion-badge>
+          <span>test</span>
+        </ion-icon>
+          <!--test-->
+      </button>
+    </ion-col>
+
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-icon name="ionic" color="primary"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+
 </ion-content>
